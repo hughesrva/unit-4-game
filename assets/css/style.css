@@ -1,0 +1,58 @@
+@font-face { font-family: adventure; src: url('../fonts/Adventure.otf'); } 
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+
+.clear{
+    clear: both;
+    display: block;
+}
+
+body{
+    color: #f9f5e3;
+    font-family: Work Sans;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+li{
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+
+#title{
+    margin: 10px 0 50px;
+    color: #efc54d;
+    font-family: adventure;
+}
+
+#instructions{
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+    float: left;
+}
+
+#gameBox{
+    float: left;
+    width: 55%;
+    text-align: center;
+}
+
+#audioBox{
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+span{
+    font-size: 40px;
+}
+

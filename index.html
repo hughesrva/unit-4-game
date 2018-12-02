@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body background="assets/images/background2.png">
+
+    <!-- contains title -->
+    <div id="titleBox">
+        <h1 id="title">Crystal Collector</h1>
+
+    </div>
+
+    <br>
+
+    <!-- contains left side -->
+    <div id="instructions">
+        <!-- instructions heading -->
+        <h1>Instructions</h1>
+        <hr>
+        <!-- instructions items -->
+        <li>You will be given a random number at the start of the game.</li>
+        <li>There are four crystals below, each of which is assigned a random hidden value. Clicking on a crystal will
+            add its value to your score.</li>
+        <li>You win the game by matching your total score to the random number. You lose if your total score
+            goes above the random number.</li>
+        <li>Each time the game starts, the game will change the values of each crystal.</p>
+    </div>
+
+    <br>
+
+    <!-- contains right side -->
+    <div id="gameBox">
+        <!-- target number div -->
+        <div id="numberBox">
+            <!-- target number -->
+            <span id="number"></span>
+        </div>
+        <!-- current number div -->
+        <div id="scoreBox">
+            <!-- current number -->
+            <span id="score"></span>
+        </div>
+
+        <div class="clear"></div>
+        <br>
+        <!-- crystal buttons div -->
+        <div id="crystals">
+            <!-- crystal buttons -->
+            <img id="crystalOne" src="assets/images/crystal2.png">
+            <img id="crystalTwo" src="assets/images/crystal4.png">
+            <img id="crystalThree" src="assets/images/crystal3.png">
+            <img id="crystalFour" src="assets/images/crystal1.png">
+        </div>
+        <!-- win/loss -->
+        <div id="record">
+            <span id="wins"></span>
+            <span id="losses"></span>
+        </div>
+
+        <br>
+    </div>
+
+    <!-- audio div -->
+    <div id="audioBox">
+        <audio src="assets/sounds/caveSounds.mp3" controls>
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+    </div>
+
+</body>
+
+</html>
